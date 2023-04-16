@@ -1,5 +1,5 @@
 <h1 align="center">
-  <div>Rustlings solution 2023</div><br>
+  <div>Rustlings solution 2023🦀</div><br>
   <img src="logo.png" alt="rust" width="200">
 </h1>
 
@@ -58,7 +58,7 @@ rustlings list
 |        `modules`(didn't add explanations yet)         |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/modules)         |
 |        `hashmaps`(didn't add explanations yet)        |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/hashmaps)        |
 |         `quiz2`(didn't add explanations yet)          |   1/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/quiz2.rs)        |
-|         `option`(didn't add explanations yet)         |   0/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/option)         |
+|         `option`(inline explanation)         |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/option)         |
 |    `error_handlings`(didn't add explanations yet)     |   0/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/error_handling)     |
 |        `generics`(didn't add explanations yet)        |   0/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/generics)        |
 |         `traits`(didn't add explanations yet)         |   0/2    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/traits)         |
