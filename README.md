@@ -9,7 +9,7 @@
 
 </div>
 
-> Solutions for the [rustlings exercises](https://github.com/rust-lang/rustlings) as of version@5.4.
+> Solutions for the [rustlings exercises](https://github.com/rust-lang/rustlings) as of version@5.4.1
 > I'll try to keep it up to date with the latest version of rustlings and add explanations to each questions.
 
 ## Doing exercises 🏃
