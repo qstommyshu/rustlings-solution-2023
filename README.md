@@ -1,5 +1,5 @@
 <h1 align="center">
-  <div>Rustlings solution</div><br>
+  <div>Rustlings solution 2023</div><br>
   <img src="logo.png" alt="rust" width="200">
 </h1>
 
