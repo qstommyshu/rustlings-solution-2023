@@ -75,6 +75,7 @@ rustlings list
 <div align="center">
 
 <sub><sup>Written by <a href="https://github.com/qstommyshu">@Tommy Shu</a></sup></sub><small>🥳</small>
+
 I know how hard it is when I'm doing the rustlings exercises, so I hope this repo can help you. If you have any questions, please feel free to open an issue or contact me. Thanks for your support! 🙏
 
 </div>
