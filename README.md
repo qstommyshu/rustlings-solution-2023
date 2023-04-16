@@ -44,33 +44,33 @@ rustlings list
 
 ## Progress
 
-|                       Exercies                        | Progress |                                                 Code                                                  |
-| :---------------------------------------------------: | :------: | :---------------------------------------------------------------------------------------------------: |
-|       `variables`(didn't add explanations yet)        |   6/6    |       [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/variables)        |
-|       `functions`(didn't add explanations yet)        |   5/5    |       [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/functions)        |
-|           `if`(didn't add explanations yet)           |   2/2    |           [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/if)           |
-|    `primitive_types`(didn't add explanations yet)     |   6/6    |    [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/primitive_types)     |
-|         `quiz1`(didn't add explanations yet)          |   1/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/quiz1.rs)        |
-|     `move_semantics`(didn't add explanations yet)     |   6/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/move_semantics)     |
-|        `structs`(didn't add explanations yet)         |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/structs)         |
-|         `enums`(didn't add explanations yet)          |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/enums)          |
-|        `strings`(didn't add explanations yet)         |   4/4    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/strings)         |
-|        `modules`(didn't add explanations yet)         |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/modules)         |
-|        `hashmaps`(didn't add explanations yet)        |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/hashmaps)        |
-|         `quiz2`(didn't add explanations yet)          |   1/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/quiz2.rs)        |
-|         `option`(inline explanation)         |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/option)         |
-|    `error_handlings`(didn't add explanations yet)     |   0/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/error_handling)     |
-|        `generics`(didn't add explanations yet)        |   0/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/generics)        |
-|         `traits`(didn't add explanations yet)         |   0/2    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/traits)         |
-|         `tests`(didn't add explanations yet)          |   0/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/tests)          |
-|         `quiz3`(didn't add explanations yet)          |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/quiz3.rs)        |
-| `standard_library_types`(didn't add explanations yet) |   0/7    | [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/standard_library_types) |
-|        `threads`(didn't add explanations yet)         |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/threads)         |
-|         `macros`(didn't add explanations yet)         |   0/4    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/macros)         |
-|         `quiz4`(didn't add explanations yet)          |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/quiz4.rs)        |
-|         `clippy`(didn't add explanations yet)         |   0/2    |         [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/clippy)         |
-|      `conversions`(didn't add explanations yet)       |   0/5    |      [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/conversions)       |
-|    `advanced_errors`(didn't add explanations yet)     |   0/2    |    [:link:](https://github.com/qstommyshu/rustlings-solution/tree/main/exercises/advanced_errors)     |
+|                       Exercies                        | Progress |                                                    Code                                                    |
+| :---------------------------------------------------: | :------: | :--------------------------------------------------------------------------------------------------------: |
+|       `variables`(didn't add explanations yet)        |   6/6    |       [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/variables)        |
+|       `functions`(didn't add explanations yet)        |   5/5    |       [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/functions)        |
+|           `if`(didn't add explanations yet)           |   2/2    |           [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/if)           |
+|    `primitive_types`(didn't add explanations yet)     |   6/6    |    [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/primitive_types)     |
+|         `quiz1`(didn't add explanations yet)          |   1/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz1.rs)        |
+|     `move_semantics`(didn't add explanations yet)     |   6/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/move_semantics)     |
+|        `structs`(didn't add explanations yet)         |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/structs)         |
+|         `enums`(didn't add explanations yet)          |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/enums)          |
+|        `strings`(didn't add explanations yet)         |   4/4    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/strings)         |
+|        `modules`(didn't add explanations yet)         |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/modules)         |
+|        `hashmaps`(didn't add explanations yet)        |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/hashmaps)        |
+|         `quiz2`(didn't add explanations yet)          |   1/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz2.rs)        |
+|             `option`(inline explanation)              |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/option)         |
+|    `error_handlings`(didn't add explanations yet)     |   0/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/error_handling)     |
+|        `generics`(didn't add explanations yet)        |   0/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/generics)        |
+|         `traits`(didn't add explanations yet)         |   0/2    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/traits)         |
+|         `tests`(didn't add explanations yet)          |   0/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/tests)          |
+|         `quiz3`(didn't add explanations yet)          |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz3.rs)        |
+| `standard_library_types`(didn't add explanations yet) |   0/7    | [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/standard_library_types) |
+|        `threads`(didn't add explanations yet)         |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/threads)         |
+|         `macros`(didn't add explanations yet)         |   0/4    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/macros)         |
+|         `quiz4`(didn't add explanations yet)          |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz4.rs)        |
+|         `clippy`(didn't add explanations yet)         |   0/2    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/clippy)         |
+|      `conversions`(didn't add explanations yet)       |   0/5    |      [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/conversions)       |
+|    `advanced_errors`(didn't add explanations yet)     |   0/2    |    [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/advanced_errors)     |
 
 <div align="center">
 
