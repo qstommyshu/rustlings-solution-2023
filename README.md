@@ -58,7 +58,7 @@ rustlings list
 |        `modules`(didn't add explanations yet)         |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/modules)         |
 |        `hashmaps`(didn't add explanations yet)        |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/hashmaps)        |
 |         `quiz2`(didn't add explanations yet)          |   1/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz2.rs)        |
-|             `option`(inline explanation)              |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/option)         |
+|             `option`(inline explanation)              |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/options)         |
 |    `error_handlings`(didn't add explanations yet)     |   0/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/error_handling)     |
 |        `generics`(didn't add explanations yet)        |   0/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/generics)        |
 |         `traits`(didn't add explanations yet)         |   0/2    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/traits)         |
