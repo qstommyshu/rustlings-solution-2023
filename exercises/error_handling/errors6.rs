@@ -47,8 +47,8 @@ fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroE
     //               ^^^^^ expected struct `ParseIntError`, found enum `ParsePosNonzeroError`
     //Don't understand why it saids expecting `ParseIntError`, I thought it would be expecting `ParsePosNonzeroError`
     //and `ParseIntError` got returned. Why `s.parse()` would return `ParsePosNonzeroError`?
-    PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_parseint)
-    // PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
+    // PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_parseint)
+    PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
 }
 
 // Don't change anything below this line.
