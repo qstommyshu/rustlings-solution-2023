@@ -5,14 +5,18 @@
 // construct to `Option` that can be used to express error conditions. Let's use it!
 // Execute `rustlings hint errors1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
-pub fn generate_nametag_text(name: String) -> Option<String> {
+pub fn generate_nametag_text(name: String) -> Result<String, String> {
     if name.is_empty() {
         // Empty names aren't allowed.
-        None
+        // None
+
+        // Explanation: look at the test cases, Our retustl should return a `Result`
+        //that can have value of `Ok` or `Err`, which the type has to be `Result`.
+        //`Result<1,2>` signature takes in two parameters, `1` is type of `Ok`, `2` is
+        //type of `Err`.
+        Err("`name` was empty; it must be nonempty.".to_owned())
     } else {
-        Some(format!("Hi! My name is {}", name))
+        Ok(format!("Hi! My name is {}", name))
     }
 }
 

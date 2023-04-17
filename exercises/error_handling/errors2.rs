@@ -17,16 +17,21 @@
 // one is a lot shorter!
 // Execute `rustlings hint errors2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 use std::num::ParseIntError;
 
-pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
+pub fn total_cost(item_quantity: &str) -> Result<i32, &str> {
     let processing_fee = 1;
     let cost_per_item = 5;
     let qty = item_quantity.parse::<i32>();
 
-    Ok(qty * cost_per_item + processing_fee)
+    // Explanation: `parse::<i32>` tries to parse the variable as i32, and returns
+    //a `Result` with `Ok` and `ParseIntError`, we need to handle this two case in
+    //match. `unwrap_err()` will take an `Err` and extracts the value out, so our
+    //return type should be an `Err`.
+    match qty {
+        Ok(qty) => Ok(qty * cost_per_item + processing_fee),
+        ParseIntError => Err("invalid digit found in string"),
+    }
 }
 
 #[cfg(test)]

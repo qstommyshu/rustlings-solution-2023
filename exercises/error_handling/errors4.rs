@@ -1,8 +1,6 @@
 // errors4.rs
 // Execute `rustlings hint errors4` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
 
@@ -15,7 +13,16 @@ enum CreationError {
 impl PositiveNonzeroInteger {
     fn new(value: i64) -> Result<PositiveNonzeroInteger, CreationError> {
         // Hmm...? Why is this only returning an Ok value?
-        Ok(PositiveNonzeroInteger(value as u64))
+
+        // Explanation: We need to match three different types of `value` to return different
+        //Result. but I wonder if there is a more eligent way to do this question?
+        if value > 0 {
+            Ok(PositiveNonzeroInteger(value as u64))
+        } else if value == 0 {
+            Err(CreationError::Zero)
+        } else {
+            Err(CreationError::Negative)
+        }
     }
 }
 
