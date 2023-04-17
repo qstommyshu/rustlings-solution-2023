@@ -15,14 +15,19 @@ impl PositiveNonzeroInteger {
         // Hmm...? Why is this only returning an Ok value?
 
         // Explanation: We need to match three different types of `value` to return different
-        //Result. but I wonder if there is a more eligent way to do this question?
-        if value > 0 {
-            Ok(PositiveNonzeroInteger(value as u64))
-        } else if value == 0 {
-            Err(CreationError::Zero)
-        } else {
-            Err(CreationError::Negative)
+        //Result.
+        match value {
+            x if x > 0 => Ok(PositiveNonzeroInteger(value as u64)),
+            x if x == 0 => Err(CreationError::Zero),
+            _ => Err(CreationError::Negative),
         }
+        // if value > 0 {
+        //     Ok(PositiveNonzeroInteger(value as u64))
+        // } else if value == 0 {
+        //     Err(CreationError::Zero)
+        // } else {
+        //     Err(CreationError::Negative)
+        // }
     }
 }
 
