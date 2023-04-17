@@ -8,8 +8,6 @@
 
 // Execute `rustlings hint errors6` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 use std::num::ParseIntError;
 
 // This is a custom error type that we will be using in `parse_pos_nonzero()`.
@@ -34,10 +32,10 @@ fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroE
     // TODO: change this to return an appropriate error instead of panicking
     // when `parse()` returns an error.
 
-    // Explanation: Found this answer online, kinda understand it, but don't know how 
+    // Explanation: Found this answer online, kinda understand it, but don't know how
     //can I come upt with this solution by myself.
     // Basically, the idea is that there are 2 possible result from s.parse(), Ok and ParseIntError.
-    //But we have 2 types of error to matach, and thry happends in different situation. In the 
+    //But we have 2 types of error to matach, and thry happends in different situation. In the
     //`parse()` stage, we can get ParseIntError or Ok. For ParseIntError, we need to handle it with `from_parseint()`.
     //For Ok, it might still give us Ok(0) or Ok(-1), which we need to handle with `from_creation()`.
     let x: i64 = s.parse().map_err(ParsePosNonzeroError::from_parseint)?;
