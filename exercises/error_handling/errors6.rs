@@ -40,7 +40,7 @@ fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroE
     //But we have 2 types of error to matach, and thry happends in different situation. In the 
     //`parse()` stage, we can get ParseIntError or Ok. For ParseIntError, we need to handle it with `from_parseint()`.
     //For Ok, it might still give us Ok(0) or Ok(-1), which we need to handle with `from_creation()`.
-    // let x: i64 = s.parse().map_err(ParsePosNonzeroError::from_parseint)?;
+    let x: i64 = s.parse().map_err(ParsePosNonzeroError::from_parseint)?;
 
     // TODO: One part don't understand is the below line of code keeps reporting :
     //let x: i64 = s.parse()?;
