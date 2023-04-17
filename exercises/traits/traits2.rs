@@ -26,6 +26,7 @@ impl AppendBar for Vec<String> {
     // Seems mut self and self are considered the same type, but `mut self` is for function
     //signature. It is mainly for readbility(other devs will know this function will mutate
     //the input parameter).
+    //References: https://users.rust-lang.org/t/what-is-different-between-mut-self-and-mut-self/59708/2
     fn append_bar(mut self) -> Self {
         self.push("Bar".to_owned());
         self
