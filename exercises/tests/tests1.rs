@@ -7,12 +7,19 @@
 // pass! Make the test fail!
 // Execute `rustlings hint tests1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 #[cfg(test)]
 mod tests {
+    // Explanation: assert make sure things inside evaluates to true
+    // pass
     #[test]
     fn you_can_assert() {
-        assert!();
+        let result = 2 + 2;
+        assert!(result == 4);
     }
+    // fail
+    // #[test]
+    // fn you_can_assert2() {
+    //     let result = 2 + 2;
+    //     assert!(result == 5);
+    // }
 }
