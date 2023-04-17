@@ -33,8 +33,22 @@ impl ParsePosNonzeroError {
 fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroError> {
     // TODO: change this to return an appropriate error instead of panicking
     // when `parse()` returns an error.
-    let x: i64 = s.parse()?;
-    PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
+
+    // Explanation: Found this answer online, kinda understand it, but don't know how 
+    //can I come upt with this solution by myself.
+    // Basically, the idea is that there are 2 possible result from s.parse(), Ok and ParseIntError.
+    //But we have 2 types of error to matach, and thry happends in different situation. In the 
+    //`parse()` stage, we can get ParseIntError or Ok. For ParseIntError, we need to handle it with `from_parseint()`.
+    //For Ok, it might still give us Ok(0) or Ok(-1), which we need to handle with `from_creation()`.
+    // let x: i64 = s.parse().map_err(ParsePosNonzeroError::from_parseint)?;
+
+    // TODO: One part don't understand is the below line of code keeps reporting :
+    //let x: i64 = s.parse()?;
+    //               ^^^^^ expected struct `ParseIntError`, found enum `ParsePosNonzeroError`
+    //Don't understand why it saids expecting `ParseIntError`, I thought it would be expecting `ParsePosNonzeroError`
+    //and `ParseIntError` got returned. Why `s.parse()` would return `ParsePosNonzeroError`?
+    PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_parseint)
+    // PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
 }
 
 // Don't change anything below this line.
