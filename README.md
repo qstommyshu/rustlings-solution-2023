@@ -63,7 +63,7 @@ rustlings list
 |             `option`(inline explanation)              |   3/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/options)         |
 |         `error_handlings`(inline explanation)         |   6/6    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/error_handling)     |
 |            `generics`(inline explanation)             |   2/2    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/generics)        |
-|             `traits`(inline explanation)              |   4/6    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/traits)         |
+|             `traits`(inline explanation)              |   5/5    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/traits)         |
 |         `tests`(didn't add explanations yet)          |   0/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/tests)          |
 |         `quiz3`(didn't add explanations yet)          |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz3.rs)        |
 | `standard_library_types`(didn't add explanations yet) |   0/7    | [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/standard_library_types) |
