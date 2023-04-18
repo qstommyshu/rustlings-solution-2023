@@ -45,7 +45,7 @@ pub fn capitalize_words_string(words: &[&str]) -> String {
 
     // TODO: Question: Why Vector is not able to turn to iterator？
     // capitalize_words_vector
-    //     .iter()
+    //     .iter() //nor into_iter() works
     //     .map(|word| word.to_owned)
     //     .collect::<String>()
 }
