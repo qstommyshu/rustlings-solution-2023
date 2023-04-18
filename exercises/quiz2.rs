@@ -28,11 +28,15 @@ mod my_module {
     use super::Command;
 
     // TODO: Complete the function signature!
+
+    // Explanation: By looking at the test cases, we can see that the output is a Vec<String>
     pub fn transformer(input: Vec<(String, Command)>) -> Vec<String> {
         // TODO: Complete the output declaration!
         let mut output: Vec<String> = vec![];
         for (string, command) in input.iter() {
-            //iter returns a borrowed references of stuff
+            // Explanation: `iter()` returns a borrowed references of object, so we need to use &str methods,
+            //then convert it to String. For `usize`, it is also just a reference, we need to dereference it first.
+
             // TODO: Complete the function body. You can do it!
             let val = match command {
                 Command::Uppercase => string.to_uppercase(),
