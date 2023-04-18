@@ -12,7 +12,13 @@ pub fn capitalize_first(input: &str) -> String {
     let mut c = input.chars();
     match c.next() {
         None => String::new(),
-        Some(first) => ???,
+        // Explanation: found this code online, `chain()` chains two iterators
+        //together, `collect()` turns iterator into the original type.
+        // Some(first) => first.to_upper_case().chain().collect(),
+
+        // A more efficient answer: More efficient as we operates more on string
+        //slices instead of iterator. Now rust seems to have a lot of magic to me...
+        Some(first) => first.to_uppercase().collect::<String>() + c.as_str(),
     }
 }
 
@@ -21,7 +27,9 @@ pub fn capitalize_first(input: &str) -> String {
 // Return a vector of strings.
 // ["hello", "world"] -> ["Hello", "World"]
 pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
-    vec![]
+    let mut capitalized_words = *words;
+    capitalized_words.map(|word| capitalize_first(word));
+    capitalized_words
 }
 
 // Step 3.
