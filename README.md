@@ -68,7 +68,7 @@ rustlings list
 |                 `tests`(inline explanation)                  |   3/3    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/tests)          |
 |               `lifetimes`(inline explanation)                |   3/3    |       [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/lifetimes)        |
 | `iterators`(inline explanation, one question for iterators2) |   5/5    |       [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/iterators)        |
-|                `threads`(inline explanation)                 |   1/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/threads)         |
+|   `threads`(inline explanation, one question for threads2)   |   2/3    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/threads)         |
 |    `standard_library_types`(didn't add explanations yet)     |   0/7    | [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/standard_library_types) |
 |            `macros`(didn't add explanations yet)             |   0/4    |         [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/macros)         |
 |             `quiz4`(didn't add explanations yet)             |   0/1    |        [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/quiz4.rs)        |

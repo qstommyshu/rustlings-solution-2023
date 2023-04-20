@@ -3,8 +3,6 @@
 // Building on the last exercise, we want all of the threads to complete their work but this time
 // the spawned threads need to be in charge of updating a shared value: JobStatus.jobs_completed
 
-// I AM NOT DONE
-
 use std::sync::{Arc, Mutex};
 use std::thread;
 use std::time::Duration;
@@ -21,15 +19,22 @@ fn main() {
         let handle = thread::spawn(move || {
             thread::sleep(Duration::from_millis(250));
             // TODO: You must take an action before you update a shared value
-            let mut status_shared = status_shared.lock().unwrap();
-            status_shared.jobs_completed += 1;
+
+            // Explanation: Need to lock the Mutex before updating shared_variable
+            //So that other threads cannot mutate the value
+            // This is the syntax I found in the rust official documentation
+            let mut counter = status_shared.lock().unwrap();
+            counter.jobs_completed += 1;
         });
         handles.push(handle);
     }
     for handle in handles {
         handle.join().unwrap();
         // TODO: Print the value of the JobStatus.jobs_completed. Did you notice anything
-        println!("jobs completed {}", status.jobs_completed);
+
+        // Don't really understand why do we need to unwrap status.lock() here, need to
+        //circle back
+        println!("jobs completed {}", status.lock().unwrap().jobs_completed);
         // interesting in the output? Do you have to 'join' on all the handles?
     }
 }
