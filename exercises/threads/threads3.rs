@@ -34,7 +34,9 @@ fn send_tx(q: Queue, tx: mpsc::Sender<u32>) -> () {
     //more eligent solution.
 
     //Also, does move takes the ownership of all the variables used in
-    //the closure? Need to circle back!
+    //the closure? move doesn't take the ownership of references in the closure?
+    //How exactly does derefence work? Does it create a copy of data?
+    //Need to circle back!
     let tx1 = tx.clone();
     let tx2 = tx.clone();
 
