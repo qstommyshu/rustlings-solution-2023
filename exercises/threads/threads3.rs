@@ -1,8 +1,6 @@
 // threads3.rs
 // Execute `rustlings hint threads3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 use std::sync::mpsc;
 use std::sync::Arc;
 use std::thread;
@@ -27,12 +25,25 @@ impl Queue {
 fn send_tx(q: Queue, tx: mpsc::Sender<u32>) -> () {
     let qc = Arc::new(q);
     let qc1 = Arc::clone(&qc);
-    let qc2 = Arc::clone(&qc);
+    let qc2 = Arc::clone(&qc); //clone create another two ref of q
+
+    // Explanation: the ownership of tx got transfered to one of the
+    //thread after sending the data. I don't konw how to transfer it out
+    //from spawned thread to main thread then pass to second spawned thread
+    //this is the closest I can get. Hopefully someone will have a
+    //more eligent solution.
+
+    //Also, does move takes the ownership of all the variables used in
+    //the closure? Need to circle back!
+    let tx1 = tx.clone();
+    let tx2 = tx.clone();
 
     thread::spawn(move || {
+        //move transfer ownership
+        // Ownership of tx is in this thread now
         for val in &qc1.first_half {
             println!("sending {:?}", val);
-            tx.send(*val).unwrap();
+            tx1.send(*val).unwrap();
             thread::sleep(Duration::from_secs(1));
         }
     });
@@ -40,7 +51,8 @@ fn send_tx(q: Queue, tx: mpsc::Sender<u32>) -> () {
     thread::spawn(move || {
         for val in &qc2.second_half {
             println!("sending {:?}", val);
-            tx.send(*val).unwrap();
+            // Can't use tx here
+            tx2.send(*val).unwrap();
             thread::sleep(Duration::from_secs(1));
         }
     });
