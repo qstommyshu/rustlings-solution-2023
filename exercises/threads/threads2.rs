@@ -23,8 +23,12 @@ fn main() {
             // Explanation: Need to lock the Mutex before updating shared_variable
             //So that other threads cannot mutate the value
             // This is the syntax I found in the rust official documentation
-            let mut counter = status_shared.lock().unwrap();
-            counter.jobs_completed += 1;
+
+            // lock() returns a Result type, we need to use unwrap() to get the
+            //value of the result.The value of the Mutex is JobStatus, then we
+            //use the JobStatus struct to access its field.
+            let mut status_child = status_shared.lock().unwrap();
+            status_child.jobs_completed += 1;
         });
         handles.push(handle);
     }
@@ -34,6 +38,11 @@ fn main() {
 
         // Don't really understand why do we need to unwrap status.lock() here, need to
         //circle back
+
+        // Circled back: handle.join().unwrap() means all the children processes are finished.
+        //However, in the initialization of variable status, it is Arc(Mutex(JobStatus)),
+        //we need to use status.lock().unwrap() to take JobStatus out from Mutex, then
+        //access the filed inside.
         println!("jobs completed {}", status.lock().unwrap().jobs_completed);
         // interesting in the output? Do you have to 'join' on all the handles?
     }
