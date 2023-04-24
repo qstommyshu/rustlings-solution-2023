@@ -12,25 +12,28 @@
 // Because we are using threads, our values need to be thread-safe.  Therefore,
 // we are using Arc.  We need to make a change in each of the two TODOs.
 
-
 // Make this code compile by filling in a value for `shared_numbers` where the
 // first TODO comment is, and create an initial binding for `child_numbers`
 // where the second TODO comment is. Try not to create any copies of the `numbers` Vec!
 // Execute `rustlings hint arc1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 #![forbid(unused_imports)] // Do not change this, (or the next) line.
 use std::sync::Arc;
 use std::thread;
 
+// Explanation: First create an Arc of numbers and we need to pass in the numbers
+//to all children threads to avoid re-creating vectors. Arc is a thread-safe wrapper
+//that can help us to safely pass references between threads.
 fn main() {
     let numbers: Vec<_> = (0..100u32).collect();
-    let shared_numbers = // TODO
+    let shared_numbers = Arc::new(numbers); // TODO
     let mut joinhandles = Vec::new();
 
     for offset in 0..8 {
-        let child_numbers = // TODO
+        // Explanation: As the move keywoard take the ownership of things used in
+        //closure, we wan to create another `child_numbers` to pass in to the closure.
+        //and Arc is a thread-safe struct that we can use to do so.
+        let child_numbers = Arc::clone(&shared_numbers); // TODO
         joinhandles.push(thread::spawn(move || {
             let sum: u32 = child_numbers.iter().filter(|&&n| n % 8 == offset).sum();
             println!("Sum of offset {} is {}", offset, sum);
