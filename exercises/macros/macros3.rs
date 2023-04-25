@@ -2,8 +2,8 @@
 // Make me compile, without taking the macro out of the module!
 // Execute `rustlings hint macros3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
+// Explanation: I actually found this syntax online, this rules hasn't been mentioned in the book
+#[macro_use]
 mod macros {
     macro_rules! my_macro {
         () => {
