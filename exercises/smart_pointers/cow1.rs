@@ -8,8 +8,6 @@
 // This exercise is meant to show you what to expect when passing data to Cow.
 // Fix the unit tests by checking for Cow::Owned(_) and Cow::Borrowed(_) at the TODO markers.
 
-// I AM NOT DONE
-
 use std::borrow::Cow;
 
 fn abs_all<'a, 'b>(input: &'a mut Cow<'b, [i32]>) -> &'a mut Cow<'b, [i32]> {
@@ -17,7 +15,7 @@ fn abs_all<'a, 'b>(input: &'a mut Cow<'b, [i32]>) -> &'a mut Cow<'b, [i32]> {
         let v = input[i];
         if v < 0 {
             // Clones into a vector if not already owned.
-            input.to_mut()[i] = -v;
+            input.to_mut()[i] = -v; //if input < 0 then change to mutable(Owned?)
         }
     }
     input
@@ -45,6 +43,11 @@ mod tests {
         let mut input = Cow::from(&slice[..]);
         match abs_all(&mut input) {
             // TODO
+            // Explanation: We passed reference to construct the Cow smart pointer, and
+            //there is no negative values in the "slice", so the returned slice will still
+            //be references.
+            Cow::Borrowed(_) => Ok(()),
+            _ => Err("Expected owned value1"),
         }
     }
 
@@ -57,6 +60,10 @@ mod tests {
         let mut input = Cow::from(slice);
         match abs_all(&mut input) {
             // TODO
+            // Explanation: We passed actual slice ownership to the Cow smart pointer, and there
+            //is no negative values in the "slice", so the returned type remains unchange.
+            Cow::Owned(_) => Ok(()),
+            _ => Err("Expected owned value2"),
         }
     }
 
@@ -69,6 +76,10 @@ mod tests {
         let mut input = Cow::from(slice);
         match abs_all(&mut input) {
             // TODO
+            // Explanation: we passed actual slice ownership to the Cow smart pointer, and there
+            //is no negative values in the "slice", so the returned type remains unchange.
+            Cow::Owned(_) => Ok(()),
+            _ => Err("Expected owned value3"),
         }
     }
 }
