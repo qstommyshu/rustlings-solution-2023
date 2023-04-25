@@ -10,6 +10,9 @@
 
 use std::borrow::Cow;
 
+// Explanation: Cow's full name is Clone on write, it's actually just like the name. When it needs
+//to write on something (here is write the negation of nagative numbers in input), Cow will create an
+//owned copy of it and mutate.
 fn abs_all<'a, 'b>(input: &'a mut Cow<'b, [i32]>) -> &'a mut Cow<'b, [i32]> {
     for i in 0..input.len() {
         let v = input[i];
