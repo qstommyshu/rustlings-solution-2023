@@ -71,7 +71,7 @@ rustlings list
 | `threads`(inline explanation, one question for threads2 and thread3) |   3/3    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/threads)     |
 |                 `smart_pointers`(inline explanation)                 |   4/4    | [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/smart_pointers)  |
 |                     `macros`(inline explanation)                     |   4/4    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/macros)      |
-|                `clippy`(didn't add explanations yet)                 |   0/2    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/clippy)      |
+|                     `clippy`(inline explanation)                     |   3/3    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/clippy)      |
 |              `conversions`(didn't add explanations yet)              |   0/5    |   [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/conversions)   |
 |            `advanced_errors`(didn't add explanations yet)            |   0/2    | [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/advanced_errors) |
 
