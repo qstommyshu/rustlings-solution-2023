@@ -73,7 +73,6 @@ rustlings list
 |                     `macros`(inline explanation)                     |   4/4    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/macros)      |
 |                     `clippy`(inline explanation)                     |   3/3    |     [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/clippy)      |
 |                  `conversions`(inline explanation)                   |   3/5    |   [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/conversions)   |
-|            `advanced_errors`(didn't add explanations yet)            |   0/2    | [:link:](https://github.com/qstommyshu/rustlings-solution-2023/tree/main/exercises/advanced_errors) |
 
 <div align="center">
 
