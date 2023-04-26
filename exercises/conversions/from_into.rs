@@ -35,45 +35,37 @@ impl Default for Person {
 // If while parsing the age, something goes wrong, then return the default of Person
 // Otherwise, then return an instantiated Person object with the results
 
-// I AM NOT DONE
+// Explanation: This question should be in quiz, as this tests the combination skills of what we
+//previously learned. We can use split as iterator to do this question as well, but I think that
+//is quite imtimidating to use. Working with all kinds of unwrap() and handle Ok, Err.
 
+// I'm seeking for a more elgent solution that uses less repatitive code, currently I used 4 Person::default()
+//Hopefully someone can give a better solution that uses less Person::default.
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
         // Explanation: Finally get it done, but it is clearly a very bad solution.
         if s.len() == 0 {
             return Person::default();
-        }
-        let mut split = s.split(','); //Split returns an iterator
-        let name = split.next().unwrap(); //unwrap so we either get a &str or Panic
-        if name.is_empty() {
+        } //--correct
+        let split: Vec<_> = s.split(',').collect(); //Split returns an iterator, collects to vector
+        if split.len() == 0 || split.len() != 2 {
             return Person::default();
         }
-        if split.clone().next().is_none() {
+        let name = split[0];
+        let age = split[1];
+
+        if name.trim().is_empty() || age.trim().is_empty() {
             return Person::default();
         }
-        let age = split.next().unwrap().parse::<usize>();
-        if split.next().is_none() {
-            match age {
-                Ok(age) => {
-                    return Person {
-                        name: name.into(),
-                        age,
-                    }
-                }
-                Err(_) => return Person::default(),
+
+        if let Ok(age) = age.parse::<usize>() {
+            Person {
+                name: name.into(),
+                age: age,
             }
         } else {
             Person::default()
         }
-        // match age {
-        //     Ok(age) => {
-        //         return Person {
-        //             name: name.into(),
-        //             age,
-        //         }
-        //     }
-        //     Err(age) => return Person::default(),
-        // }
     }
 }
 
