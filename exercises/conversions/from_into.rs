@@ -39,6 +39,41 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        // Explanation: Finally get it done, but it is clearly a very bad solution.
+        if s.len() == 0 {
+            return Person::default();
+        }
+        let mut split = s.split(','); //Split returns an iterator
+        let name = split.next().unwrap(); //unwrap so we either get a &str or Panic
+        if name.is_empty() {
+            return Person::default();
+        }
+        if split.clone().next().is_none() {
+            return Person::default();
+        }
+        let age = split.next().unwrap().parse::<usize>();
+        if split.next().is_none() {
+            match age {
+                Ok(age) => {
+                    return Person {
+                        name: name.into(),
+                        age,
+                    }
+                }
+                Err(_) => return Person::default(),
+            }
+        } else {
+            Person::default()
+        }
+        // match age {
+        //     Ok(age) => {
+        //         return Person {
+        //             name: name.into(),
+        //             age,
+        //         }
+        //     }
+        //     Err(age) => return Person::default(),
+        // }
     }
 }
 
